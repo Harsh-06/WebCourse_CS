@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Implementation</title>
+</head>
+<body>
+    <!-- We can write the input tags without the form tag -->
+    <!-- <input type="text">
+    <input type="checkbox">
+    <input type="password">
+    <input type="submit"> -->
+
+    <!-- Form Attributes 
+        action: Destination where we nned to send the data
+        method: Specifies the type of HTTP request
+        if nothing is specified action takes the reference of the same page and sends a get request 
+    -->
+    <!-- For visually impaired people we use label -->
+    <!-- <form>
+        <label>Username:<input type="text" placeholder="Username"></label>
+        <label>Password:<input type="password" placeholder="Password"></label>
+        <input type="submit">
+    </form> -->
+<!-- For Validation we use Required attribute . required attribute checks also type format-->
+    <form>
+        <label for="username">Username:</label>
+        <input name="username" id="username" type="text" placeholder="Username" required>
+        <label for="password">Password:</label>
+        <input name="password" id="password" type="password" placeholder="Password" required>
+        <select name="color">
+            <option value="Red">Red</option>
+            <option value="Yellow">YEllow</option>
+            <option value="Orange">Orange</option>
+        </select>
+        <input type="submit">
+    </form>
+    <!-- there is radio checkbox types also.
+    using select tag we can create a dropdown list
+    importance of name and value attributes -->
+    
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register Page</title>
+</head>
+<body>
+    <h1>Register</h1>
+    <form>
+        <label>First Name: <input name="name" type="text" placeholder="John" required></label>
+        <label>Last Name: <input name="name" type="text" placeholder="Smith" required></label><br>
+        Male<input name="radio-choice" type="radio" value="choice-1">
+        Female<input name="radio-choice" type="radio" value="choice-2">
+        Other<input name="radio-choice" type="radio" value="choice-3"><br>
+        <label>Email: <input type="email" placeholder="your email" required></label>
+        <label>Password: <input type="password" minlength="5" maxlength="10" required></label><br>
+        <!-- Here above we could have used pattern = ".{5,10}" reqiured title="          " -->
+        <label>
+            Birthday:
+            <select>
+                <option>Month</option>
+                <option>Jan</option>
+                <option>Feb</option>
+            </select>
+            <select>
+                <option>Day</option>
+                <option>1</option>
+                <option>2</option>
+            </select>
+            <select>
+                <option>Year</option>
+                <option>1999</option>
+                <option>2000</option>
+            </select>
+        </label><br>
+        I agree to the terms and conditions <input type="checkbox"><br>
+        <input type="submit">
+    </form>
+</body>
+</html>
